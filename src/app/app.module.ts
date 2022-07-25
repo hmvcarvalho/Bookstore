@@ -15,9 +15,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MatTableModule } from '@angular/material/table';
+import { BookComponent } from './components/book/book.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AuthComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    AuthComponent,
+    DashboardComponent,
+    BookComponent,
+  ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -29,6 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatInputModule,
     HttpClientModule,
+    MatTableModule,
   ],
   providers: [
     { provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: { hasBackdrop: false } },
