@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Sign In</h1>
+<mat-dialog-content align="center">
+  <mat-form-field appearance="fill">
+    <mat-label>email</mat-label>
+    <input matInput [(ngModel)]="user.email" type="email" />
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>password</mat-label>
+    <input matInput [(ngModel)]="user.password" type="password" />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+  <button mat-stroked-button (click)="tryLogIn()">ok</button>
+  <button mat-stroked-button color="warn" mat-dialog-close>cancel</button>
+  <button mat-stroked-button disabled>sign up</button>
+</mat-dialog-actions>
